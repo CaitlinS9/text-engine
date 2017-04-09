@@ -76,6 +76,8 @@ Use functions accept a `game` object, which is a JavaScript object with the foll
 
 `enterRoom` (Function) - The function which moves a player to a room. Accepts `roomId` as a String.
 
+`inInventory` (Function) - Function to check if a player has a particular item. Accepts a String.
+
 Use functions are just JavaScript functions, with the full power of the language. You can make an item do whatever you want when a player uses it. Knock yourself out.
 
 That's everything! If you've made a JSON object with all these properties -- that is, a disk -- you've got a playable game!

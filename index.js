@@ -30,6 +30,10 @@ const loadDisk = (disk) => {
     output.scrollTop = output.scrollHeight;
   };
 
+const inInventory = (thing) =>
+{
+    return disk.inventory.includes(thing);
+}
   // String -> Room
   const getRoom = (id) => {
     return disk.rooms.find(room => room.id === id);
