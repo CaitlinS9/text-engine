@@ -407,6 +407,8 @@ const johnB = {
         You make sure to tell Faye who to contact in the event of your death and let her know that if she calls the cops that you'll shoot them once you see them. She'll want to keep them safe... even then you know that the cyanide will have done its job well before the police would ever make it out to you. 
 
         But the cyanide is more painful that you expected. You feel it burn as it goes down your throat. You scream in pain and anguish and writhe on the ground. You struggle ot breathe and no matter what you do you just can't seem to get any air. In a matter of minutes you're dead. 
+
+        --The End--
       `,
     },
   ],
