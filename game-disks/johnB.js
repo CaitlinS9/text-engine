@@ -85,7 +85,7 @@ const johnB = {
       `,
       items: [
           { name: 'watering can', desc: 'It\'s a watering can full of water.', isTakeable: true, use: ({disk, println, getRoom}) => {
-          const room = getRoom(disk.roomId);
+          const room = disk.roomId;
           if (room == 'maze' || room == 'garden') {
             println('Your pour a bit on water on the rosebushes. It seems to make you feel a bit better although there is still a lot of work to be done.');
           } else {
@@ -110,7 +110,7 @@ const johnB = {
       `,
       items: [
           { name: 'watering can', desc: 'It\'s a watering can full of water.', isTakeable: true, use: ({disk, println, getRoom}) => {
-          const room = getRoom(disk.roomId);
+          const room = disk.roomId;
           if (room == 'maze') {
             println('Your pour a bit on water on the rosebushes. It seems to make you feel a bit better although there is still a lot of work to be done.');
           } else {
@@ -124,7 +124,7 @@ const johnB = {
           {
               name: 'bottle', desc: 'This is a bottle of potassium cyanide. It looks pretty dangerous.', isTakeable: true, use: ({disk, println, getRoom}) =>
               {
-                  const room = getRoom(disk.roomId);
+                  const room = disk.roomId;
                   if (room == 'porch')
                       {
                          if (inInventory('telephone'))
@@ -152,7 +152,7 @@ const johnB = {
           },
           {
               name: 'piercing gun', desc: 'This is a tool used for piercings. There isn\'t any jewelry around.', isTakeable: true, use: ({disk, println, getRoom}) => {
-                  const room = getRoom(disk.roomId);
+                  const room = disk.roomId;
                   if (room == 'shop')
                       {
                           println('You lift up your shirt and take the gun in your hand, quickly piercing your nipple. It feels right somehow. The pain is pleasurable but nothing happens.');
@@ -199,8 +199,7 @@ const johnB = {
           {
           name: 'telephone', desc: 'This looks like a cordless landline phone.', isTakeable: true, use: ({disk, println, getRoom}) =>
               {
-                  const room = getRoom(disk.roomId);
-
+                  const room = disk.roomId;
                   if (room == 'porch')
                   {
                   println('This could be an uncomfortable call. You call your old friend Faye Gamble. You know she will know what to do. Perhaps there is something you should use now.');
